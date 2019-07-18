@@ -1,0 +1,141 @@
+body{
+    background-color: skyblue;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+}
+
+footer{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+}
+
+
+h1{
+    margin: 0;
+}
+
+.grande-nuvem{
+    padding: 200px 50px 50px 50px;
+    background-color: white;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aviao{
+    margin-left: 400px;
+    position: fixed;
+    z-index: 1;
+}
+
+@media (max-height: 600px){
+
+    .aviao{
+        margin-left: 300px;
+     }
+}
+
+.ondulacoes{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='138' height='35' viewBox='0 0 138 35'%3E%3Cpath fill='%23FFF' d='M 3.15027 34.4375C 1.74207 34.6025 0.68396 34.7266 0 35L 68.9982 35C 68.9982 35 68.9998 28.6387 69 19.5132C 69 20.7261 69.0001 21.8892 69.0001 22.9956L 69.0018 35L 138 35C 137.316 34.7266 136.258 34.6025 134.85 34.4375C 131.11 33.9995 124.903 33.2729 116.678 28.6875C 111.015 25.3901 106.523 20.9771 102.07 16.6025C 93.5474 8.23096 85.1685 -1.97984e-15 69.0018 3.55056e-31C 69.0006 5.271 69 10.4292 69 15.0952C 69 10.4287 68.9994 5.27148 68.9982 3.55056e-31C 52.8314 1.97986e-15 44.4526 8.23096 35.9302 16.6025C 31.4772 20.9771 26.985 25.3901 21.3221 28.6875C 13.0974 33.2729 6.88965 33.9995 3.15027 34.4375Z'/%3E%3C/svg%3E");
+    height: 35px;
+}
+
+.nuvens{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+    position: relative;
+    width: 400px;
+    height: 400px; 
+    background: no-repeat;
+    background-size: 100%; 
+    background-image: url(http://www.clker.com/cliparts/0/S/M/U/U/k/whitecloud-hi.png);
+    text-align: center;
+}
+
+.nuvens div{
+    padding-top: 100px
+}
+
+.nuvem1{
+    margin-left: 100px;
+    margin-bottom: 70px;
+    z-index: 2;
+}
+
+.nuvem2{
+    margin-left: 15%;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+.nuvem3{
+    margin-left: 50%;
+    margin-bottom: 30px;
+    z-index: 0;
+    
+}
+
+.card{
+    background-color: rgba(0, 51, 192, 0.2);
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    color: rgb(51, 50, 50);
+    padding: 10px;
+}
+
+.card:hover{
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.5);
+}
+
+.card h1{
+    height: 2.5em;
+}
+
+.texto-card{
+    margin-top: 10px;
+    height: 25%;
+}
+
+.card button{
+    bottom: 0;
+    background-color: rgb(74, 206, 74);
+    border: 0;
+    box-shadow: 105px;
+    padding: 10px;
+    border-radius: .5em;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card button:hover{
+    background-color: rgb(55, 194, 55);
+}
+
+.creditos{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0 10px 0;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    color: wheat;
+}
+
+.creditos a{
+    text-decoration: unset;
+    color: brown;
+}
